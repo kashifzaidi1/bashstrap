@@ -21,3 +21,8 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[user]
+	name = Mashhood Rastgar
+	email = mashhoodr@gmail.com
+[mergetool]
+	keepBackup = true

@@ -1,8 +1,30 @@
-### Aliases
+### Personal configurations
 
-# Open specified files in Sublime Text
-# "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text"'
+# Android development
+export DEVELOPER_DIR="/Applications/Xcode.app/Contents/Developer"
+export ANDROID_HOME="/Applications/Android/sdk"
+export PATH=$ANDROID_HOME/platform-tools:$PATH
+export NEXUS="0179f47c1fd116a1"
+export QMOBILE="ZPPZ4SNRW8GYSSHA"
+export ANDROID="$HOME/Developer/JAVA/Android"
+
+# For Prodo
+alias prodo='cd ~/Dropbox/snuke/prodo/prodo-web'
+
+# Configurations for current tipgain projects
+export TIPDIR=~/Developer/Scala/tipgain
+alias tpg='cd $TIPDIR/aft-backend;play run;'
+alias tpd='cd $TIPDIR/aft-devices;play "run 9009";'
+alias tpt='cd $TIPDIR/aft-testing;play "run 10532";'
+alias tt='cd $TIPDIR;'
+# export ENV="STAGING"
+export BACKEND_SERVER_HOST_URL="http://localhost:9000"
+export BACKEND_SERVER_USER_ID="51900a2e300445aa550657bf"
+export BACKEND_SERVER_ORGANISATION_ID="51900a2e300445aa550657be"
+export BACKEND_SERVER_APP_ID="51900a2f300445aa550657c0"
+
+
+### Aliases
 
 # Color LS
 colorflag="-G"
@@ -20,6 +42,9 @@ alias .....="cd ../../../.."
 # Shortcuts to my Code folder in my home directory
 alias code="cd ~/Developer"
 alias sites="cd ~/Sites"
+alias home='cd ~'
+alias unhide='defaults write com.apple.finder  AppleShowAllFiles -bool true;killall Finder;'
+alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false;killall Finder;'
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
